@@ -10,7 +10,7 @@ import UIKit
 
 class NotePadViewController: UITableViewController {
 
-    let noteArray = ["fatal error: Index out of range",
+    var noteArray = ["fatal error: Index out of range",
                     "How do I add a header based on API information in Javascript"]
 
     override func viewDidLoad() {
@@ -38,6 +38,13 @@ class NotePadViewController: UITableViewController {
         
         tableView.deselectRow(at: indexPath, animated: true)
     
+    }
+    
+    //MARK: Compose new notes
+    @IBAction func ComposeButtonPressed(_ sender: UIBarButtonItem) {
+        let noteField = UITextField()
+        self.noteArray.append(noteField.text!)
+        self.tableView.reloadData()
     }
     
 }

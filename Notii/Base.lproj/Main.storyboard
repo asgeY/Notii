@@ -32,7 +32,14 @@
                             <outlet property="delegate" destination="Ngo-3X-t82" id="FOa-JL-9yP"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Notii" id="fFt-FJ-ogv"/>
+                    <navigationItem key="navigationItem" title="Notii" id="fFt-FJ-ogv">
+                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="dP2-sT-xsr">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="ComposeButtonPressed:" destination="Ngo-3X-t82" id="mSS-9Q-ng4"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qih-Gq-ieD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
