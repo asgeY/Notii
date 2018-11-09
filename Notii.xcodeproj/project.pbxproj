@@ -12,6 +12,7 @@
 		E9D434BD2193BA21008A16EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9D434BB2193BA21008A16EB /* Main.storyboard */; };
 		E9D434BF2193BA28008A16EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9D434BE2193BA28008A16EB /* Assets.xcassets */; };
 		E9D434C22193BA28008A16EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9D434C02193BA28008A16EB /* LaunchScreen.storyboard */; };
+		E9D434CA2193DDD9008A16EB /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D434C92193DDD9008A16EB /* Note.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		E9D434BE2193BA28008A16EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9D434C12193BA28008A16EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9D434C32193BA28008A16EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9D434C92193DDD9008A16EB /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +57,46 @@
 			isa = PBXGroup;
 			children = (
 				E9D434B72193BA21008A16EB /* AppDelegate.swift */,
-				E9D434B92193BA21008A16EB /* NotePadViewController.swift */,
-				E9D434BB2193BA21008A16EB /* Main.storyboard */,
-				E9D434BE2193BA28008A16EB /* Assets.xcassets */,
-				E9D434C02193BA28008A16EB /* LaunchScreen.storyboard */,
+				E9D434CC2193DE1F008A16EB /* Controllers */,
+				E9D434CB2193DDEE008A16EB /* Data Model */,
+				E9D434CD2193DE37008A16EB /* Views */,
+				E9D434CE2193DE49008A16EB /* Supporting Files */,
 				E9D434C32193BA28008A16EB /* Info.plist */,
 			);
 			path = Notii;
+			sourceTree = "<group>";
+		};
+		E9D434CB2193DDEE008A16EB /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				E9D434C92193DDD9008A16EB /* Note.swift */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		E9D434CC2193DE1F008A16EB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E9D434B92193BA21008A16EB /* NotePadViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E9D434CD2193DE37008A16EB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E9D434BB2193BA21008A16EB /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E9D434CE2193DE49008A16EB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E9D434BE2193BA28008A16EB /* Assets.xcassets */,
+				E9D434C02193BA28008A16EB /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +172,7 @@
 			files = (
 				E9D434BA2193BA21008A16EB /* NotePadViewController.swift in Sources */,
 				E9D434B82193BA21008A16EB /* AppDelegate.swift in Sources */,
+				E9D434CA2193DDD9008A16EB /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
